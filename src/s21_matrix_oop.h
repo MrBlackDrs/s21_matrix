@@ -62,6 +62,6 @@ class S21Matrix {
 };
 
 // input
-void InputMatrix(S21Matrix& matrix, int a, int b);
+void InputMatrix(S21Matrix &matrix, int a, int b);
 
 #endif

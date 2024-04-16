@@ -299,10 +299,10 @@ S21Matrix S21Matrix::InverseMatrix() {
 }
 
 // input output
-void InputMatrix(S21Matrix& matrix, int a, int b) {
+void InputMatrix(S21Matrix &matrix, int a, int b) {
   double val;
   for (int i = 0; i < a; i++) {
-    std::cout<<"row "<<i+1<<": ";
+    std::cout << "row " << i + 1 << ": ";
     for (int j = 0; j < b; j++) {
       std::cin >> val;
       matrix.SetValue(val, i, j);
@@ -315,7 +315,7 @@ void S21Matrix::PrintMatrix() {
   for (int i = 0; i < rows_; i++) {
     for (int j = 0; j < cols_; j++) {
       std::cout.precision(7);
-      std::cout<< matrix_[i][j] << " ";
+      std::cout << matrix_[i][j] << " ";
     }
     std::cout << "\n";
   }
